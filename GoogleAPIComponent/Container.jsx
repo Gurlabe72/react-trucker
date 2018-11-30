@@ -1,16 +1,16 @@
 export class Container extends React.Component {
     render ()  {
-        if (!this.props.loaded) {
-            return 
-            <div>
-                Hold the fuck up...
+        const style = {
+            width:'100vw',
+            height:'100vh'
+        }
+        return (
+            <div style = {style}>
+                <Map google={this.props.google}/>
             </div>
-            }
-            return (
-                <div>Map Area</div>
             )
         }
     }
-export default GoogleApiComponent()({
-apiKey:_google_API_key_here
+export default GoogleApiComponent ({
+apiKey: _google_API_key_here
 }) (Container)
