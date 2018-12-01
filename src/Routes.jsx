@@ -9,9 +9,9 @@ class Routing extends Component {
             <Router>
                 <div>
                     <Link to='/'>Home</Link>
-                    <Link to='/dummy'>Dummy </Link>
+                    <Link to='/dummy'> Dummy </Link>
                     <Route path='/' exact component={App}></Route>
-                    <Route path='/' exacpt component={Dummy}></Route>
+                    <Route path='/' exact component={Dummy}></Route>
                 </div>
             </Router>
         )
